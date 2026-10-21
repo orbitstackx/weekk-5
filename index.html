@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LearnHub SPA</title>
+  <meta name="description" content="LearnHub - a Single Page Application simulation built with HTML, CSS and vanilla JavaScript.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="site-header">
+    <a href="/" class="brand" data-link>Learn<span>Hub</span></a>
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="/" data-link>Home</a>
+      <a href="/courses" data-link>Courses</a>
+      <a href="/about" data-link>About</a>
+      <a href="/contact" data-link>Contact</a>
+      <button id="theme-btn" class="theme-btn" aria-label="Toggle dark mode">&#9680;</button>
+    </nav>
+  </header>
+
+  <div id="progress" class="progress" aria-hidden="true"></div>
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+
+  <footer class="site-footer">&copy; 2026 LearnHub &middot; SPA simulation &middot; no page reloads</footer>
+  <div id="toast" class="toast" role="status"></div>
+
+  <noscript><p style="padding:2rem">This application requires JavaScript.</p></noscript>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
